@@ -1,7 +1,7 @@
 module.exports = {
-  DATABASE: 'biology',
+  DATABASE: 'myself',
   USERNAME: 'root',
-  PASSWORD: '123456',
+  PASSWORD: '123654',
   PORT: '3306',
-  HOST: 'localhost'
+  HOST: '47.97.213.213'
 }

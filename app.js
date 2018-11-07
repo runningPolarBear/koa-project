@@ -50,6 +50,6 @@ app.use(router.allowedMethods());
 app.listen(port, () => {
   // opn(`http://localhost:${port}`)
   console.log(
-    `服务已启动,请开始你的表演,访问地址:http://localhost:${port}`
+    `服务已启动,请开始你的表演,访问地址:http://47.97.213.213:${port}`
   );
 });

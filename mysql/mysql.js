@@ -34,6 +34,12 @@ let query = (sql, values) => {
   })
 }
 
+// 用户列表
+exports.userLists = () => {
+  let _sql = ` select * from user;`
+  return query(_sql)
+}
+
 // 查询新闻表
 exports.findAllNews = () => {
   let _sql = ` select * from t_news;`

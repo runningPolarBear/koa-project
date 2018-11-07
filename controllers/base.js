@@ -1,4 +1,18 @@
-const biology = require('../mysql/mysql')
+const user = require('../mysql/mysql')
+
+/**
+ * 查询用户信息
+ * @param ctx
+ * @returns {Promise<void>}
+ */
+exports.userLists = async ctx => {
+  await user.userLists().then(res => {
+    ctx.body = {
+      list: res,
+      pagination: {total: res.length, pageSize: 10, current: 1}
+    }
+  })
+}
 
 /**
  * 查询所有新闻

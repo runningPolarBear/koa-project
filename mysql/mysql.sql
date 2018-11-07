@@ -2,7 +2,7 @@ create database myself;
 
 use myself;
 
-CREATE TABLE `user` (
+create table if not exists `user` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(20) NOT NULL COMMENT '名称',
   `password` varchar(20) COMMENT '密码',
