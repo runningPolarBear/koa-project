@@ -1,4 +1,4 @@
-const user = require('../mysql/mysql')
+const user = require('../mysql/user')
 
 /**
  * 查询用户信息

@@ -1,6 +1,6 @@
 const Router = require('koa-router')
 const router = new Router()
-const Base = require('../controllers/base')
+const Base = require('../controllers/user')
 router.prefix('/user')
 router.get('/userLists', Base.userLists)
 // router.get('/findAllNews', Base.findAllNews)
